@@ -1,5 +1,5 @@
 {
-    "name": "rohitjoshi/db2cloud",
+    "name": "rohitjoshi9023/db2cloud",
     "description": "Schedule your database backup to various cloud file storage providing platforms like gDrive,DropBox and S3 and more.You can also store your database backup to your local server as well",
     "type": "laravel/laravel",
     "require": {
