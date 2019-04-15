@@ -14,6 +14,8 @@
             "email": "officialrohitjoshi@gmail.com"
         }
     ],
+     "minimum-stability": "dev",
+     "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Db2Cloud\\": "src"
