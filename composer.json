@@ -2,7 +2,7 @@
     "name": "rohitjoshi9023/db2cloud",
     "description": "Schedule your database backup to various cloud file storage providing platforms like gDrive,DropBox and S3 and more.You can also store your database backup to your local server as well",
     "require": {
-        "laravel/laravel": "^5.8",
+        "laravel/laravel": "^5.0",
         "league/flysystem-aws-s3-v3": "~1.0",
         "nao-pon/flysystem-google-drive": "~1.1"
     },
