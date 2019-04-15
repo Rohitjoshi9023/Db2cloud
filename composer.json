@@ -1,0 +1,45 @@
+{
+    "name": "rj/db2cloud",
+    "description": "Schedule your database backup to various cloud file storage providing platforms like gDrive,DropBox and S3 and more.You can also store your database backup to your local server as well",
+    "type": "laravel/laravel",
+    "require": {
+        "laravel/laravel": "^5.8",
+        "league/flysystem-aws-s3-v3": "~1.0",
+        "nao-pon/flysystem-google-drive": "~1.1"
+    },
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Rohit joshi",
+            "email": "officialrohitjoshi@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "autoload": {
+        "psr-4": {
+            "Db2Cloud\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "package\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Db2Cloud\\Db2CloudServiceProvider",
+                "Db2Cloud\\Adapters\\GoogleDriveServiceProvider"
+            ],
+            "aliases": {
+                "Db2Cloud":"Db2Cloud\\Facades\\Db2Cloud"
+            }
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover"
+        ]
+    }
+}
