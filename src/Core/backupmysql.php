@@ -48,7 +48,7 @@ class backupmysql{
 
     public function backup(){
         if($this->connect()){
-            exec("C:/xampp/mysql/bin/mysqldump.exe --user=$this->username --password=$this->password --host=$this->password $this->database >$this->path",$output, $return);
+            exec("mysqldump --user=$this->username --password=$this->password --host=$this->password $this->database >$this->path",$output, $return);
             return true;
         }else{
            return false;
