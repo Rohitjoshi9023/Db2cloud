@@ -7,7 +7,7 @@
         "league/flysystem-aws-s3-v3": "~1.0",
         "nao-pon/flysystem-google-drive": "~1.1"
     },
-    "license": "Apache License 2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Rohit joshi",
